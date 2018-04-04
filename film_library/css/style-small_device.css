@@ -1,0 +1,425 @@
+
+	body {
+		margin: auto;
+		background: url('../img/bg-ironman3.jpg') no-repeat center center fixed;
+		background-size: cover;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+	h2, h3 {
+		font-family: "Geneva", Arial, Helvetica, sans-serif;
+	}
+	#wrapper {
+		width: 98%;
+		margin: 0 auto;
+		padding-bottom: 7px;
+	}
+	/********************header**************************/
+	.header_substrate {
+	    cursor: auto;
+	    position: relative;
+	    z-index: 5;
+	    width: 100%;
+	    background-color: #000;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    height: 33px;
+	}
+	.top_menu {
+		position: absolute;
+		z-index: 10;
+		top: -127px;
+		left: 0;
+    	margin: 0 auto;
+    	width: 100%;
+	}
+	.logo {
+		float: left;
+		width: 20%;
+	}
+	.empty {
+		float: auto;
+		width: 20%;
+	}
+	.search_panel {
+		float: auto;
+		width: auto;
+	}
+	#search, #reset_search {
+		float: auto;
+		width: 120px;
+	    height: 22px;
+	    border: 2px solid #90A4AE;
+        box-sizing: border-box;
+	    color: #B0BEC5;
+	    background-color: #546E7A;
+	}
+	#reset_search {
+		width: 25px;
+	}
+	#reset_search:hover {
+		color: #00C853;
+	}
+	.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+		display: none;
+	    position: absolute;
+		z-index: 10;
+		padding: 0;
+	    top: -2412px;
+	    left: 428.5px;
+	    width: 166px;
+	    border: 2px solid #90A4AE;
+	}
+	.ui-widget {
+		list-style: none;
+		width: 160px;
+		left: 438px;
+	}
+	.ui-menu-item {
+		color: #B0BEC5;
+		background-color: #546E7A;
+		width: 167px;
+	}
+	.ui-state-focus {
+		color: #00C853;
+		background-color: #546E7A;
+		cursor: pointer;
+	}
+	.slider {
+		display: none;
+	}
+	/*******************content**************************/
+	.content {
+		margin-top: 100px;
+		width: 100%;
+		background-color: #546E7A;
+		border: 2px solid #90A4AE;
+		border-radius: 10px;
+	}
+	.content:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.left_content {
+		float: auto;
+		width: 35%;
+		min-height: 1000px;
+	}
+	#user_menu {
+		color: #B0BEC5;
+		padding: 8px;
+		margin: 30px 0;
+		background-color: #263238;
+		border: 2px solid #90A4AE;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+		width: 100%;
+		height: 50px;
+		font-size: 15px;
+		cursor: pointer;
+		line-height: 100%;
+	}
+	#categories, #produced {
+		float: auto;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+	.current, .currentProduced {
+		width: 90%;
+		font-size: 18px;
+	}
+	.left_content h3 {
+		color: #B0BEC5;
+	}
+	.left_content a {
+		text-decoration: none;
+		margin: 0;
+		transition: all .6s;
+		cursor: pointer;
+		color: #B0BEC5;
+	}
+	.left_content a:hover, li:hover, .playList h3:hover {
+		color: #00C853;
+		transition: all .6s;
+	}
+	#button_all {
+		color: #B0BEC5;
+		padding: 5px;
+		margin: 0 auto;
+		background-color: #263238;
+		border: 1px solid #90A4AE;
+		border-radius: 10px;
+		width: 100%;
+		font-size: 15px;
+	}
+	.current #button_all {
+		width: 90%;
+		border: 2px solid #00C853;
+	}
+	.animation_settings {
+		float: auto;
+		width: 100%;
+		margin: 0;
+	}
+	#animation_selection, #speed {
+		height: 25px;
+		width: 100%;
+		margin: 5px 0;
+		border: 2px solid #90A4AE;
+		color: #B0BEC5;
+		background-color: #263238;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.7);
+		cursor: pointer;
+	}
+	#animation_selection:hover, #speed:hover, #createNewTab:hover, #createNewSlide:hover, #createEditList:hover, #addPlayList:hover, #button_all:hover {
+		border: 2px solid #00C853;
+		color: #00C853;
+		transition: all .6s;
+	}
+	input:focus, select:focus, textarea:focus, button:focus, h3:focus	{
+		outline: none;
+		background-color: #263238;
+	}
+	#createNewTab, #createNewSlide, #createEditList, #addPlayList {
+		color: #B0BEC5;
+		padding: 10px;
+		margin: 10px 0px;
+		background-color: #263238;
+		border: 2px solid #90A4AE;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+		width: 100%;
+		height: 100%;
+		font-size: 14px;
+		cursor: pointer;
+		line-height: 15px;
+	}
+	.playList, .editList {
+		visibility: hidden;
+		color: #B0BEC5;
+		margin: 0;
+		padding: 3px;
+		background-color: #37474F;
+		width: auto;
+		border: 2px solid #90A4AE;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.editCatalog h3:focus {
+		background-color: #37474F;
+	}
+	.playList img, .editList img {
+		width: 10px;
+		height: 10px;
+		float: right;
+	}	
+	.catalog, .editCatalog{
+		width: auto;
+	}
+	.playList li, .editList li {
+		line-height: 1em;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.ui-accordion.ui-widget {
+		left: 30px;
+	}
+	.right_content {
+		float: auto;
+		width: 63%;
+	}
+	.right_content:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.right_content h2 {
+		color: #B0BEC5;
+	}
+	.right_content input, select, textarea, button {
+		height: 20px;
+		width: 85%;
+		background-color: #263238;
+		color: #B0BEC5;
+		margin-top: 13px;
+	}
+	#general {
+		width: 99%;
+	}
+	#general:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.tab {
+        border: 1px solid #90A4AE;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.7);
+        margin: 5px;
+        background: #37474F;
+        width: 100%;
+        height: 330px;
+        float: auto;
+    }
+	.delete {
+		width: 20px;
+		height: 20px;
+		float: auto;
+		margin: 0;
+		cursor: pointer;
+	}
+	.tab .open_popup {
+		height: 170px;
+		cursor: pointer;
+		float: left;
+		margin: 0 10px 8px 8px;		
+	}
+	.tab h2 {
+		margin-left: 10px;
+	}
+	.tab p {
+		margin-bottom: 5px;
+		text-align: left;
+		font-size: 14px;
+		color: #B0BEC5;
+		padding-left: 8px;
+	}
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.7);
+		bottom: 0;
+		cursor: default;
+		left: 0;
+		opacity: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		visibility: hidden;
+		z-index: 99999;
+		transition: all .6s;
+	}
+	.popup, .newTab, .newSlide, .newPlayList {
+		background-color: #e0dfdc;
+		display: inline-block;
+		left: 50%;
+		opacity: 0;
+		padding: 8px;
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		text-align: justify;
+		top: 50%;
+		visibility: hidden;
+		z-index: 999999;
+		transform: translate(-50%, -50%);
+		transition: opacity .5s, top .5s;
+		border-radius: 11px;
+	}
+	.popup .close_popup, .close_newTab, .close_newSlide, .close_newPlayList {
+		width: 6px;
+		height: 17px;
+		position: absolute;
+		padding: 1px 9px 4px 9px;
+		top: -15px;
+		right: -15px;
+		cursor: pointer;
+		color: #00C853;
+		background-color: #e0dfdc;
+		border: 1px solid #90A4AE;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+		text-align: center;
+		transition: opacity .5s, top .5s;
+	}
+	.close_popup:hover, .close_newTab:hover, .close_newSlide:hover, .close_newPlayList:hover {
+		background-color: #37474F;
+		border: 1px solid #90A4AE;
+		transition: all .6s;
+	}
+	.popup .tab {
+		width: 350px;
+		height: 350px;
+		text-align: center;
+		border-radius: 12px;
+		margin: 20px 0 0 20px;
+		padding-right: 10px; 
+	}
+	.popup .tab .delete {
+		display: none;
+	}
+	.popup .tab .open_popup {
+		height: 200px;
+		cursor: auto;
+		float: left;
+		margin: 0 10px 10px 10px;	
+	}
+	.popup .tab p {
+		margin-bottom: 5px;
+		text-align: left;
+		font-size: 14px;
+		color: #B0BEC5;
+		padding-left: 8px;
+	}
+	.newTab {
+		z-index: 999991;
+	}
+	.newTab form, .newSlide form, .newPlayList form {
+		background: #37474F;
+		width: 350px;
+		height: 350px;
+		text-align: center;
+		border-radius: 12px;
+	}
+	input:focus, select:focus, textarea:focus {
+		outline: none;
+	}
+	.newTab textarea {
+		height: 100px;
+		font-size: 14px;
+	}
+	#addTab, #reset, #addSlide, #saveList {
+		width: 49%;
+		cursor: pointer;
+	}
+	.newSlide {
+		z-index: 999992;
+	}
+	.newPlayList {
+		z-index: 999993;
+	}
+	.footer {
+		font-size: 14px;
+	    padding: 15px 0 15px 0;
+		margin-right: 0;
+	    background-color: #263238;
+	    border-radius: 10px 10px 10px 10px;
+	    padding-left: 5px;
+	    padding-right: 7px;
+	}
+	.footer_text p {
+		color: #78909C;
+		text-align: justify;
+	}
+	.footer_text strong {
+		font-weight: bold;
+		color: #B0BEC5;
+	}
+	.footer_partners img {
+		border-radius: 10px;
+		float: left;
+	}
+	.footer_partners a {
+		margin-left: 10px;
+		color: #B0BEC5;
+		cursor: auto;
+	}
+	.footer_partners a:hover {
+		color: #00C853;
+	}
+	
+
+
+	
+	
