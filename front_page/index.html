@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Front Page</title>
+	<link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"> 
+</head>
+<body id="adaptiv">
+	<div class="header">
+		<div class="wrapper">
+			<div class="menu">
+				<div class="logo">
+					<a href="#"><img src="../static/img/logo.png"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#section_1"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+						<li><a href="#section_3"><i class="fa fa-bar-chart" aria-hidden="true"></i> Статистика</a></li>
+						<li><a href="#section_5"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Знания</a></li>
+						<li><a href="#section_7"><i class="fa fa-usd" aria-hidden="true"></i> Конвертер валют</a></li>
+						<li><a href="#section_9"><i class="fa fa-cogs" aria-hidden="true"></i> Мои проекты</a></li>
+					</ul>
+				</div>
+				<div class="nav_mini">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="sidebar">
+					<ul>
+						<li><a href="#section_1"><i class="fa fa-home" aria-hidden="true"></i> Главная</a></li>
+						<li><a href="#section_3"><i class="fa fa-bar-chart" aria-hidden="true"></i> Статистика</a></li>
+						<li><a href="#section_5"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Знания</a></li>
+						<li><a href="#section_7"><i class="fa fa-usd" aria-hidden="true"></i> Конвертер валют</a></li>
+						<li><a href="#section_9"><i class="fa fa-cogs" aria-hidden="true"></i> Мои проекты</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="section_1">
+		<img class='animated zoomIn' src="../static/img/logo.png">
+		<h1 class='animated'>OZida</h1>
+		<p class='animated'>Когда объединяются великие идеи - возможно все &#169;Sun</p>
+	</div>
+	<div id="section_2">
+		<div class="wrapper">
+			<div class="introduction">
+				<p>Меня зовут Козленко Юлия, и я хочу рассказать немного о своих проектах.</p>
+				<p>На протяжении обучения в компании Itea.ua, я создала несколько проектов. Первый из них назывался <a href="https://github.com/OZida/JQuery.filmLibrary" target="_blank">Film Library</a>, в котором я научилась на практике применять библитеку JQuery, а также с ее помощью создавать полноценные страницы сайта, без применения плагинов , а только создавая все элементы страницы своими руками. Может показаться, что это «изобретения велосипеда», но этот подход в обучении позволил мне изучить JQuery изнутри.</p>
+				<p>Следующим проектом стало создание <a href="https://github.com/OZida/FrontendAdv.CreatingCMS" target="_blank">CMS</a>. Основной идеей его стало знакомство с webpack и MVC. С помощью последней происходила загрузка постов с удаленного API через AJAX запросы и внедрение их в проект. Далее модель (MVC) была переработана и заменена на Vue.js. К слову сказать, очень понравилась работа с этим фреймворком, т.к. разбитие на отдельные  компоненты, которые содержат верстку, код и стили, относящиеся к конкретному участку общего проекта, очень удобны в понимании и применении. Параллельно происходило знакомство и внедрение в проект таких технологий, как SCSS, Pug, PIXI.js, Flexbox и др.</p>
+				<p>Завершающим мое обучение проектом и представленный Вашему вниманию, является <a href="https://github.com/OZida/FrontendAdv.FrontPage" target="_blank">Front Page</a>. В нем уже не используется Vue.js, на смену ему снова вернулась MVC модель для загрузки валюты с API ПриватБанка и дальнейшая работа с конвертором валют. Также я была ознакомлена с принципами работы Unit testing. В большом количестве в проекте применяются JQuery плагины (в этот раз уже готовые решения), а именно: owl-carousel, parallax, Isotope и диаграммы Chart.js. Верстка проекта выполнена адаптивной с расширениями 480px-640px, 641px-960px и от 961px и более. Также с помощью SWPrecacheWebpackPlugin на сайте выполняется агрессивное кеширование сраницы.</p>
+				<p>Надеюсь, результат проделанной мною работы Вам понравиться.</p>
+			</div>
+		</div>
+	</div>
+	<div id="section_3">
+		<div class="wrapper">
+			<h2>Рейтинг языков программирования среди украинских разработчиков</h2>
+			<p>На портале <a href="https://dou.ua/lenta/articles/language-rating-jan-2018/" target="_blank">DOU</a> опубликовали свежий рейтинг языков программирования по результатам опроса украинских разработчиков.</p>
+		</div>
+	</div>
+	<div id="section_4">
+		<div class="wrapper">
+			<canvas id="programChart"></canvas>
+		</div>
+	</div>
+	<div id="section_5">
+		<div class="wrapper">
+			<h2>Мои знания в Frontend</h2>
+			<p>Основа обучения получена в <a href="https://itea.ua/" target="_blank">Itea.ua</a>.</p>
+		</div>
+	</div>
+	<div id="section_6">
+		<div class="wrapper">
+			<div class="filters-button-group">
+				<button class="button is-checked" data-filter="*">Все</button>
+				<button class="button" data-filter=".html">Верстка</button>
+				<button class="button" data-filter=".program">Программирование</button>
+				<button class="button" data-filter=".other">Другое</button>
+			</div>
+			<div class="grid">
+				<div class="item html">
+				 	<h3 class="name">HTML</h3>
+					<img src="../static/img/html.png">
+				</div>
+				<div class="item html">
+				 	<h3 class="name">SASS/SCSS</h3>
+					<img src="../static/img/scss-sass.png">
+				</div>
+				<div class="item program">
+				 	<h3 class="name">JavaScript</h3>
+					<img src="../static/img/js.png">
+				</div>
+				<div class="item other">
+				 	<h3 class="name">GitHub</h3>
+					<img src="../static/img/github.png">
+				</div>
+				<div class="item program">
+				 	<h3 class="name">JQuery</h3>
+					<img src="../static/img/jquery.png">
+				</div>
+				<div class="item program">
+				 	<h3 class="name">Vue</h3>
+					<img src="../static/img/vue.png">
+				</div>
+				<div class="item other">
+				 	<h3 class="name">Jasmine</h3>
+					<img src="../static/img/jasmine.png">
+				</div>
+				<div class="item html">
+				 	<h3 class="name">Pug</h3>
+					<img src="../static/img/pug.png">
+				</div>
+				<div class="item html">
+				 	<h3 class="name">CSS</h3>
+					<img src="../static/img/css.png">
+				</div>
+				<div class="item html">
+				 	<h3 class="name">Flexbox</h3>
+					<img src="../static/img/flexbox.png">
+				</div>
+				<div class="item program">
+				 	<h3 class="name">JQuery Plugins</h3>
+					<img src="../static/img/plugins.png">
+				</div>
+				<div class="item other">
+				 	<h3 class="name">Webpack</h3>
+					<img src="../static/img/webpack.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section_7">
+		<div class="wrapper">
+			<h2>Конвертация валют</h2>
+			<p>Данные взяты с официального сайта <a href="https://privatbank.ua/ru" target="_blank">ПриватБанка</a> на актуальную дату.</p>
+		</div>
+	</div>
+	<div id="section_8">
+		<div class="wrapper">
+			<div class="currency"></div>
+			<div class="for_input">
+				<p>Моя желаемая зарплата (в дол.США). При изменении валюты - будет пересчитана в выбранную.</p>
+				<input type="text" name="text" value='400' id="my_conv" readonly="readonly"><br>
+				<p>Выберите валюту, которую хотите конвертировать, укажите сумму и выберите валюту, в которую нужно пересчитать сумму денег.</p>
+				<input type="text" name="text" id="custom_conv">
+				<div class="curr_radio">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section_9">
+		<div class="wrapper">
+			<h2>Мои проекты</h2>
+			<p>Проекты, выполненные мной во время обучения.</p>
+		</div>
+	</div>
+	<div id="section_10">
+		<div class="wrapper">
+			<div class="fadeOut owl-carousel owl-theme owl-loaded owl-drag">
+				<div class="slider_filling">
+					<div class="wrap">
+						<iframe class='frame' src="https://ozida.github.io/creating_cms/#/"></iframe>
+					</div>
+					<div class="description">
+						<h2>CMS</h2>
+						<p>В основе проекта было заложено научится применять и работать с фреймворком Vue.js. С помощью него и Vue-router было создано ряд приложений. Каждое из них выполняет свое назначение и в своей работе не зависит друг от друга.</p>
+						<a href="https://ozida.github.io/creating_cms/#/">Посмотреть проект</a>
+					</div>
+				</div>
+				<div class="slider_filling">
+					<div class="wrap">
+						<iframe class='frame' src="https://ozida.github.io/film_library/"></iframe>
+					</div>
+					<div class="description">
+						<h2>Film Library</h2>
+						<p>Проект был выполнен в стиле одного из популярных кино сайтов. С помощью двойного фильтра происходит сортировка фильмов по категории,
+						и далее по стране производителе. Фильтрацию можно производить в зависимости от выбранной анимации и ее скорости. Также есть возможность
+						добавлять фильм и слайд, предварительно заполнив соответствующую форму. Для поиска конкретного фильма используется виджет autocomplete. С помощью плагина accordion можно создать свой собственный плей-лист.</p>
+						<a href="https://ozida.github.io/film_library/">Посмотреть проект</a>
+					</div>
+				</div>
+				<div class="slider_filling">
+					<div class="wrap">
+						<iframe class='frame' src="https://ozida.github.io/front_page/"></iframe>
+					</div>
+					<div class="description">
+						<h2>Front Page</h2>
+						<p>Это проект был создан для отображения полученных мною знаний и собрание воедино моих проектов. Активное применение плагинов в совокупности с другими изученными технологиями применялись для его создания.</p>
+						<a href="https://ozida.github.io/front_page/">Посмотреть проект</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<div class='footer'>
+		<div class="wrapper">
+			<div class="footer_content">
+				<div class="author">
+					OZida | 2018
+				</div>
+				<div class="contacts">
+					<a><i class="fa fa-skype" aria-hidden="true"></i>
+						<p>onemezida</p>
+					</a>
+					<a ><i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>nakuzida@gmail.com</p>
+					</a>
+					<a ><i class="fa fa-mobile" aria-hidden="true"></i>
+						<p>+38(063)105-56-23</p>
+					</a>
+					<a href="https://github.com/OZida" target="_blank"><i class="fa fa-git" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="overlay">
+		<div class="popup">
+			<h2>Спасибо за просмотр!</h2>
+		</div>
+	</div> -->
+<script type="text/javascript" src="main.js"></script></body>
+</html>
