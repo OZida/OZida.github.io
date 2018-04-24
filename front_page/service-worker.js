@@ -37,8 +37,8 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["1.txt","a5ea0ad9260b1550a14cc58d2c39b03d"],["674f50d287a8c48dc19ba404d20fe713.eot","674f50d287a8c48dc19ba404d20fe713"],["912ec66d7572ff821749319396470bde.svg","912ec66d7572ff821749319396470bde"],["af7ae505a9eed503f8b8e6982036873e.woff2","af7ae505a9eed503f8b8e6982036873e"],["b06871f281fee6b241d60582ae9369b9.ttf","b06871f281fee6b241d60582ae9369b9"],["fee66e712a8a08eef5805a46892932ad.woff","fee66e712a8a08eef5805a46892932ad"],["index.html","cb7291a46eb8024f8062b533d7b24934"],["main.js","4ece92cd67a16d186e468d2f472077f5"]];
-var cacheName = 'sw-precache-v3-ozida-0.023031627877518446-' + (self.registration ? self.registration.scope : '');
+var precacheConfig = [["1.txt","a5ea0ad9260b1550a14cc58d2c39b03d"],["674f50d287a8c48dc19ba404d20fe713.eot","674f50d287a8c48dc19ba404d20fe713"],["912ec66d7572ff821749319396470bde.svg","912ec66d7572ff821749319396470bde"],["af7ae505a9eed503f8b8e6982036873e.woff2","af7ae505a9eed503f8b8e6982036873e"],["b06871f281fee6b241d60582ae9369b9.ttf","b06871f281fee6b241d60582ae9369b9"],["fee66e712a8a08eef5805a46892932ad.woff","fee66e712a8a08eef5805a46892932ad"],["index.html","cb7291a46eb8024f8062b533d7b24934"],["main.js","0036c36e2485246f2888808eb0d41f90"],["service-worker.js","97e1a26d2d7fefbf0f7a7098c425b345"]];
+var cacheName = 'sw-precache-v3-ozida-0.9866175931326986-' + (self.registration ? self.registration.scope : '');
 
 
 var ignoreUrlParametersMatching = [/^utm_/];
